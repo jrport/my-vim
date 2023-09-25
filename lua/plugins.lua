@@ -6,11 +6,14 @@ return require('packer').startup(function(use)
   -- }
   -- }
   use {
-	  'tmsvg/pear-tree',
+    "akinsho/toggleterm.nvim", 
   }
   use {
-	  "evesdropper/luasnip-latex-snippets.nvim",
+	  'tmsvg/pear-tree',
   }
+--  use {
+--	  "evesdropper/luasnip-latex-snippets.nvim",
+-- }
   use { 
 	  'lervag/vimtex',
   }
@@ -67,5 +70,11 @@ return require('packer').startup(function(use)
   }
   use {
 	  'ThePrimeagen/harpoon',
+  }
+  use {
+    'mfussenegger/nvim-lint',
+  }
+  use {
+    'sbdchd/neoformat',
   }
 end)

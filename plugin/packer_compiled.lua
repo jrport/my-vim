@@ -114,15 +114,20 @@ _G.packer_plugins = {
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
-  ["luasnip-latex-snippets.nvim"] = {
+  neoformat = {
     loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/luasnip-latex-snippets.nvim",
-    url = "https://github.com/evesdropper/luasnip-latex-snippets.nvim"
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
   },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -148,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
