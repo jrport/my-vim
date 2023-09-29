@@ -104,15 +104,15 @@ _G.packer_plugins = {
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
-  },
   harpoon = {
     loaded = true,
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["nasm-lsp"] = {
+    loaded = true,
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/nasm-lsp",
+    url = "https://github.com/Clinery1/nasm-lsp"
   },
   neoformat = {
     loaded = true,
@@ -133,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -163,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["tree-sitter-asm"] = {
+    loaded = true,
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/tree-sitter-asm",
+    url = "https://github.com/rush-rs/tree-sitter-asm"
   },
   ["vim-surround"] = {
     loaded = true,

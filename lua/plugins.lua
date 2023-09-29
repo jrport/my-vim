@@ -4,17 +4,22 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   -- }
-  -- }
+  --
+  use { 'rush-rs/tree-sitter-asm' }
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+  use {
+    "Clinery1/nasm-lsp"
+    }
   use {
     "akinsho/toggleterm.nvim", 
   }
   use {
 	  'tmsvg/pear-tree',
   }
---  use {
---	  "evesdropper/luasnip-latex-snippets.nvim",
--- }
-  use { 
+    use { 
 	  'lervag/vimtex',
   }
   use {
@@ -22,9 +27,6 @@ return require('packer').startup(function(use)
   }
   use {
 	  "tpope/vim-surround"
-  }
-  use {
-	  "rafamadriz/friendly-snippets"
   }
   use{ 
 	  'saadparwaiz1/cmp_luasnip' 

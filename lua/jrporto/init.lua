@@ -8,6 +8,7 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 })
 --
 
+vim.o.clipboard=unnamedplus
 vim.o.number = true
 vim.g.mapleader = " "
 vim.api.nvim_command('filetype plugin on')

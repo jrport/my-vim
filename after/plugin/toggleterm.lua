@@ -1,3 +1,3 @@
 require("toggleterm").setup{
-  size = 5
+  size = 1
 }

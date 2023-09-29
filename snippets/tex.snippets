@@ -1,38 +1,67 @@
 #version 1
 #PREAMBLE
 #documentclass without options
-snippet dcl \documentclass{}
+
+snippet braces "Left/Right curly braces" 
+  \\left\{${1:equation}\right\\}
+
+snippet docl \documentclass{}
 	\\documentclass{${1:class}} ${0}
 #documentclass with options
-snippet dclo \documentclass[]{}
-	\\documentclass[${1:options}]{${2:class}} ${0}
 
-snippet tmplt "Template"
-	\\documentclass{article}
-
-	\\usepackage{transparent}
-	\\usepackage{xcolor}
-	\\usepackage{graphicx} 
+snippet simple "Basic document whitout any specific math packages"
+	\\documentclass[11pt, a4paper]{${1:article}}
+	\\usepackage[T1]{fontenc}
 	\\usepackage{geometry}
-	\\usepackage{amssymbt}    
-	\\usepackage{setspace}
-	\\usepackage{amsmath}
-	\\usepackage{amsthm}
-	\\geometry{
-	top=15mm
-	}
-	\\linespread{1.2}
-	
-	\\title{${1:title}}
-	\\author{${3:author}}
-	\\date{${4:Date}}
+	\\usepackage{hyperref}
+	\\usepackage{graphicx}
+	\\graphicspath{{${2:./images}}}
 
-	
+	\\geometry{margin=3.5cm}
+	\\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
+
 	\\begin{document}
-		    $0
+	$0
+	\\end{document}
+
+
+
+snippet template "Template"
+	\\documentclass[11pt, a4paper]{${1: article }}
+	\\usepackage{geometry}
+	\\usepackage{babel}[portuguese]
+
+	\\usepackage{graphicx}
+	\\usepackage{amsmath, amssymb, bm}
+	\\usepackage{physics, siunitx}
+	\\usepackage{hyperref}
+
+	\\graphicspath{{${2:./images}}}
+
+	\\linespread{1.2}
+	\\geometry{
+	margin=3.5cm,
+	top = ${3:5mm}	
+	}
+
+	\\sisetup{separate-uncertainty=true, exponent-product=\cdot, range-units=single}
+	\\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
+	\\setlength{\parindent}{0pt}
+
+	\\begin{document}
+	
+	\\title{${3:title}}
+	\\author{${4:author}}
+	\\date{${5:Date}}
+
+	\\maketitle
+
+	$0
+
 	\\end{document}
 
 #newcommand
+
 snippet nc \newcommand
 	\\newcommand{\\${1:cmd}}[${2:opt}]{${3:realcmd}} ${0}
 #usepackage
@@ -52,10 +81,6 @@ snippet begin \begin{} ... \end{} block
 		${0:${VISUAL}}
 	\\end{$1}
 
-# Maketitle
-snippet mkt maketitle
-	\\maketitle
-	
 # Tabular
 snippet tab tabular (or arbitrary) environment
 	\\begin{${1:tabular}}{${2:c}}
@@ -135,8 +160,7 @@ snippet desc description environment
 		\\item[${1}] ${0}
 	\\end{description}
 # Endless new item
-snippet ]i \item (recursive)
-	\\item ${1}
+snippet ]i \item (recursive) \\item ${1}
 		${0:]i}
 # Matrix
 snippet mat smart matrix environment
@@ -365,13 +389,13 @@ snippet \{ \{ \}
 #delimiter
 snippet lr left right
 	\\left${1} ${0:${VISUAL}} \\right$1
-snippet lr( left( right)
+snippet () left( right)
 	\\left( ${0:${VISUAL}} \\right)
-snippet lr| left| right|
+snippet | left| right|
 	\\left| ${0:${VISUAL}} \\right|
-snippet lr{ left\{ right\}
-	\\left\\{ ${0:${VISUAL}} \\right\\}
-snippet lr[ left[ right]
+snippet { left\{ right\
+	\\left\\{ ${0:${VISUAL}} \\right\\
+snippet [ left[ right]
 	\\left[ ${0:${VISUAL}} \\right]
 snippet lra langle rangle
 	\\langle ${0:${VISUAL}} \\rangle
