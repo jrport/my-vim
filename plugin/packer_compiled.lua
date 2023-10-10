@@ -104,30 +104,25 @@ _G.packer_plugins = {
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
   harpoon = {
     loaded = true,
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
-  ["nasm-lsp"] = {
+  ["indent-blankline.nvim"] = {
     loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/nasm-lsp",
-    url = "https://github.com/Clinery1/nasm-lsp"
-  },
-  neoformat = {
-    loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/neoformat",
-    url = "https://github.com/sbdchd/neoformat"
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-lint"] = {
-    loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/nvim-lint",
-    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -144,45 +139,35 @@ _G.packer_plugins = {
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["pear-tree"] = {
-    loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/pear-tree",
-    url = "https://github.com/tmsvg/pear-tree"
-  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["telescope.nvim"] = {
+  ["vim-closer"] = {
     loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/vim-closer",
+    url = "https://github.com/rstacruz/vim-closer"
   },
-  ["toggleterm.nvim"] = {
+  ["vim-mypy"] = {
     loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
-    url = "https://github.com/akinsho/toggleterm.nvim"
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/vim-mypy",
+    url = "https://github.com/Integralist/vim-mypy"
   },
-  ["tokyonight.nvim"] = {
+  ["vim-sleuth"] = {
     loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
-  ["tree-sitter-asm"] = {
-    loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/tree-sitter-asm",
-    url = "https://github.com/rush-rs/tree-sitter-asm"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/vim-sleuth",
+    url = "https://github.com/tpope/vim-sleuth"
   },
   vimtex = {
     loaded = true,
     path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
+  },
+  ["windline.nvim"] = {
+    loaded = true,
+    path = "/home/jrporto/.local/share/nvim/site/pack/packer/start/windline.nvim",
+    url = "https://github.com/windwp/windline.nvim"
   }
 }
 
